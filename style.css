@@ -1,0 +1,134 @@
+
+  
+ 
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#iframe-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(2px); /* Adjust the blur amount as needed */
+   
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none; /* Remove border around iframe */
+    pointer-events: none; /* Make iframe unclickable */
+}
+   
+  
+        .highlight-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: hsl(0, 0%, 22%);
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0px 4px 8px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;  /* Make the highlight box a flex container */
+            flex-direction: column;  /* Arrange items vertically */
+            align-items: center;  /* Center items horizontally within the column
+
+            
+          
+            /* Default dimensions for smaller screens */
+            width: 80%;  /* Adjust as needed */
+            max-width: 500px;  /* Cap for smaller screens */
+            height: 350px;  /* Adjust as needed */
+          
+            /* Adjust for larger screens */
+            @media (min-width: 768px) {  /* Target tablets and larger */
+              width: 60%;
+              max-width: 700px;
+              height: 400px;
+            }
+          
+            @media (min-width: 1024px) {  /* Target desktops and larger */
+              width: 45%;
+              max-width: 800px;
+              height: 400px;
+            }
+          }
+          
+          .highlight-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-size: 40px;  /* Adjust for smaller screens */
+          
+            @media (min-width: 768px) {
+              font-size: 50px;  /* Increase for larger screens */
+            }
+          
+            @media (min-width: 1024px) {
+              font-size: 60px;  /* Increase further for desktops */
+            }
+          }
+          
+          .icon-email img {
+            width: 20%;  /* Responsive width based on box size */
+            height: auto;  /* Maintain aspect ratio */
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin: 0 auto;  /* Center the icon horizontally */
+          }
+
+          /**
+ * Download Button
+ */
+
+.styled {
+  border: 0;
+  margin-top: 50px;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(255, 188, 98);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+          
+  
+
+
+
+
+  
+
+
+
