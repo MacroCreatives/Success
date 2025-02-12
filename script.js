@@ -38,31 +38,6 @@ fire(0.1, {
   startVelocity: 45,
 });
 
-// Get the form element
-const form = document.querySelector('.contact-form');
-
-// Add an event listener to the form submission event
-form.addEventListener('submit', function(event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
-
-  // Clear the flag in local storage
-  localStorage.removeItem('successFormShown');
-
-  // Submit the form using JavaScript
-  // You can use the fetch API or XMLHttpRequest to submit the form
-  // For example:
-  fetch('https://api.web3forms.com/submit', {
-    method: 'POST',
-    body: new FormData(form),
-  })
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-
-  // Redirect to the success page
-  window.location.href = 'https://macrocreatives.github.io/Success/';
-});
 
 
 
